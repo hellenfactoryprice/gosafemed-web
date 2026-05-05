@@ -1,14 +1,14 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export async function onRequestPost(context) {
+  const { request, env } = context;
 
-export default async (req, res) => {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' });
-  }
+  // Initialize Resend with environment variable from Cloudflare
+  const resend = new Resend(env.RESEND_API_KEY);
 
   try {
-    const { name, email, company, message } = req.body;
+    const body = await request.json();
+    const { name, email, company, message } = body;
 
     const { data, error } = await resend.emails.send({
         from: 'New Inquiry fm Gosafemed Website <onboarding@resend.dev>',
@@ -29,12 +29,12 @@ export default async (req, res) => {
 
     if (error) {
       console.error({ error });
-      return res.status(400).json(error);
+      return new Response(JSON.stringify(error), { status: 400, headers: { 'Content-Type': 'application/json' } });
     }
 
-    res.status(200).json(data);
+    return new Response(JSON.stringify(data), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'An unexpected error occurred.' });
+    return new Response(JSON.stringify({ error: 'An unexpected error occurred.' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
   }
-};
+}
