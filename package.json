@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Email sending backend for GoSafeMed contact form",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
