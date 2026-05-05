@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Tips for Maintaining Your Emergency Medical Equipment - GoSafeMed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .whatsapp-fab { position: fixed; bottom: 20px; right: 20px; z-index: 1000; transition: transform 0.3s ease-in-out; }
+        .whatsapp-fab:hover { transform: scale(1.1); }
+        .prose h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 600;}
+        .prose p { margin-bottom: 1em; line-height: 1.7;}
+        .prose img { border-radius: 0.5rem; margin-top: 1.5em; margin-bottom: 1.5em;}
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F26522',
+                        secondary: '#1A1A1B',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-secondary shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">GoSafeMed</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="text-white hover:text-primary">Home</a>
+                <a href="../products/products.html" class="text-white hover:text-primary">Products</a>
+                <a href="insight.html" class="text-white hover:text-primary">Insights</a>
+                <a href="../index.html#about" class="text-white hover:text-primary">About Us</a>
+                <a href="../index.html#contact" class="text-white hover:text-primary">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-secondary">
+            <a href="../index.html#home" class="block py-2 px-4 text-sm text-white hover:bg-primary">Home</a>
+            <a href="../products/products.html" class="block py-2 px-4 text-sm text-white hover:bg-primary">Products</a>
+            <a href="insight.html" class="block py-2 px-4 text-sm text-white hover:bg-primary">Insights</a>
+            <a href="../index.html#about" class="block py-2 px-4 text-sm text-white hover:bg-primary">About Us</a>
+            <a href="../index.html#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <article class="prose lg:prose-xl">
+            <h1 class="text-3xl md:text-4xl font-bold text-secondary">5 Tips for Maintaining Your Emergency Medical Equipment</h1>
+            <p class="text-gray-500 text-sm mt-2">FEB 28, 2026</p>
+            
+            <img src="images/equipment-maintenance.png" alt="Medical equipment being inspected">
+            
+            <p>Proper maintenance ensures your rescue equipment is ready when you need it most. Learn five essential tips for inspecting, cleaning, and storing your gear to prolong its lifespan and guarantee performance. Regular checks are non-negotiable for professionals.</p>
+            
+            <h2>1. Follow a Strict Cleaning Schedule</h2>
+            <p>After every use, all equipment must be thoroughly cleaned and decontaminated according to manufacturer guidelines. Use appropriate disinfectants and pay close attention to straps, handles, and joints where contaminants can accumulate.</p>
+            
+            <h2>2. Regular Visual Inspections</h2>
+            <p>Before and after each mission, conduct a visual inspection. Look for signs of wear and tear, such as cracks in plastic, fraying straps, or loose bolts. Document any findings and take compromised equipment out of service immediately until it can be repaired or replaced.</p>
+
+            <h2>3. Functional Testing</h2>
+            <p>Don't just look—test. Regularly operate mechanisms like folding hinges, locking pins, and buckles to ensure they function smoothly and securely. For devices like AEDs, follow the self-test schedule and check battery and pad expiration dates.</p>
+
+        </article>
+        
+        <div class="mt-12 border-t pt-6">
+            <a href="insight.html" class="text-primary hover:underline">&larr; Back to All Insights</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 GoSafeMed. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8618977149057" target="_blank" class="whatsapp-fab">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16">
+    </a>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
