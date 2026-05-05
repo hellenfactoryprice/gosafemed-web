@@ -1,0 +1,13 @@
+{
+  "name": "gosafemed-website",
+  "version": "1.0.0",
+  "description": "Email sending backend for GoSafeMed contact form",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "resend": "^3.2.0"
+  }
+}

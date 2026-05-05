@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Immobilization & Transfer - GoSafeMed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+        }
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+        }
+        .tab-btn.active {
+            background-color: #F26522;
+            color: white;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F26522',
+                        secondary: '#1A1A1B',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-secondary shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">GoSafeMed</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html#home" class="text-white hover:text-primary">Home</a>
+                <a href="products.html" class="text-white hover:text-primary">Products</a>
+                <a href="../insights/insight.html" class="text-white hover:text-primary">Insights</a>
+                <a href="../index.html#about" class="text-white hover:text-primary">About Us</a>
+                <a href="../index.html#contact" class="text-white hover:text-primary">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-secondary">
+            <a href="../index.html#home" class="block py-2 px-4 text-sm text-white hover:bg-primary">Home</a>
+            <a href="products.html" class="block py-2 px-4 text-sm text-white hover:bg-primary">Products</a>
+            <a href="../insights/insight.html" class="block py-2 px-4 text-sm text-white hover:bg-primary">Insights</a>
+            <a href="../index.html#about" class="block py-2 px-4 text-sm text-white hover:bg-primary">About Us</a>
+            <a href="../index.html#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-secondary text-center mb-8">Emergency Immobilization & Transfer</h1>
+
+        <!-- Filter Tabs -->
+        <div id="filter-tabs" class="flex justify-center space-x-2 md:space-x-4 mb-10">
+            <button data-filter="all" class="tab-btn active font-semibold py-2 px-4 rounded-full transition duration-300">All</button>
+            <button data-filter="foldable" class="tab-btn font-semibold py-2 px-4 rounded-full transition duration-300">Foldable Stretchers</button>
+            <button data-filter="scoop" class="tab-btn font-semibold py-2 px-4 rounded-full transition duration-300">Scoop Stretchers</button>
+            <button data-filter="spine" class="tab-btn font-semibold py-2 px-4 rounded-full transition duration-300">Spine Boards</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1: Foldable -->
+            <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="foldable">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-F003</h3>
+                <p class="text-gray-600 flex-grow mb-4">Lightweight aluminum, 4-fold design, high-strength fabric.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+            <!-- Product 2: Scoop -->
+            <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="scoop">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-S001</h3>
+                <p class="text-gray-600 flex-grow mb-4">Detachable design, thermal-resistant polymer, X-ray translucent.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+            <!-- Product 3: Spine Board -->
+            <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="spine">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-B002</h3>
+                <p class="text-gray-600 flex-grow mb-4">High-density polyethylene (HDPE), compatible with head immobilizers.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+            <!-- Product 4: Foldable -->
+            <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="foldable">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-F005</h3>
+                <p class="text-gray-600 flex-grow mb-4">Two-fold, heavy-duty canvas, includes safety belts.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+            <!-- Product 5: Scoop -->
+            <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="scoop">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-S003</h3>
+                <p class="text-gray-600 flex-grow mb-4">Carbon fiber frame, adjustable length, easy to clean.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+             <!-- Product 6: Spine Board -->
+             <div class="product-item bg-white rounded-lg shadow-lg p-6 flex flex-col" data-category="spine">
+                <div class="w-full h-64 bg-gray-200 mb-4 rounded-lg"></div>
+                <h3 class="text-lg font-bold text-secondary">GSM-DW-B005</h3>
+                <p class="text-gray-600 flex-grow mb-4">Pediatric size, multiple handholds, fully sealed for easy cleaning.</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full w-1/2">View Details</button>
+                    <a href="../index.html#contact" class="bg-primary text-white font-bold py-2 px-4 rounded-full w-1/2 text-center">Inquiry Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 GoSafeMed. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8618977149057" target="_blank" class="whatsapp-fab">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16">
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Product filter logic
+        const filterTabs = document.getElementById('filter-tabs');
+        const productGrid = document.getElementById('product-grid');
+        const productItems = productGrid.getElementsByClassName('product-item');
+
+        filterTabs.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                const filter = e.target.getAttribute('data-filter');
+
+                // Update active tab style
+                filterTabs.querySelector('.active').classList.remove('active');
+                e.target.classList.add('active');
+
+                // Filter products
+                for (let item of productItems) {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
