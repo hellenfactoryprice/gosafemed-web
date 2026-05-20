@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" role="img" aria-label="DIN13164 first aid kit container loading calculation soft bag vs plastic case">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111; }
+      .th { font: 700 18px Arial, Helvetica, sans-serif; fill: #111; }
+      .td { font: 400 18px Arial, Helvetica, sans-serif; fill: #111; }
+      .grid { stroke: #111; stroke-width: 2; fill: none; }
+      .cellpad { }
+      .wm { font: 700 120px Arial, Helvetica, sans-serif; fill: #777; opacity: 0.12; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="420" fill="#fff" />
+
+  <text class="title" x="700" y="44" text-anchor="middle">DIN13164 first aid kit container loading calculation: soft bag vs plastic case</text>
+
+  <g transform="translate(0,0) rotate(-18 700 250)">
+    <text class="wm" x="700" y="280" text-anchor="middle">GOSAFEMED</text>
+  </g>
+
+  <g transform="translate(60,80)">
+    <rect class="grid" x="0" y="0" width="1280" height="300" />
+
+    <line class="grid" x1="0" y1="80" x2="1280" y2="80" />
+    <line class="grid" x1="0" y1="190" x2="1280" y2="190" />
+
+    <line class="grid" x1="220" y1="0" x2="220" y2="300" />
+    <line class="grid" x1="410" y1="0" x2="410" y2="300" />
+    <line class="grid" x1="600" y1="0" x2="600" y2="300" />
+    <line class="grid" x1="740" y1="0" x2="740" y2="300" />
+    <line class="grid" x1="900" y1="0" x2="900" y2="300" />
+    <line class="grid" x1="1020" y1="0" x2="1020" y2="300" />
+    <line class="grid" x1="1150" y1="0" x2="1150" y2="300" />
+
+    <text class="th" x="110" y="50" text-anchor="middle">ITEM</text>
+    <text class="th" x="315" y="50" text-anchor="middle">Product Size</text>
+    <text class="th" x="505" y="50" text-anchor="middle">Carton Size</text>
+    <text class="th" x="670" y="50" text-anchor="middle">CBM/ctn</text>
+    <text class="th" x="820" y="50" text-anchor="middle">20FT Quantity</text>
+    <text class="th" x="960" y="50" text-anchor="middle">20FT CBM</text>
+    <text class="th" x="1085" y="50" text-anchor="middle">40HQ Quantity</text>
+    <text class="th" x="1215" y="50" text-anchor="middle">40HQ CBM</text>
+
+    <text class="td" x="20" y="128">DIN13164</text>
+    <text class="td" x="20" y="152">Soft Bags</text>
+    <text class="td" x="315" y="142" text-anchor="middle">22.5×13×5.5cm</text>
+    <text class="td" x="505" y="142" text-anchor="middle">50×27×35cm</text>
+    <text class="td" x="670" y="142" text-anchor="middle">0.047</text>
+    <text class="td" x="820" y="142" text-anchor="middle">11500</text>
+    <text class="td" x="960" y="142" text-anchor="middle">27.2</text>
+    <text class="td" x="1085" y="142" text-anchor="middle">28000</text>
+    <text class="td" x="1215" y="142" text-anchor="middle">66.2</text>
+
+    <text class="td" x="20" y="238">DIN13164</text>
+    <text class="td" x="20" y="262">Rigid Plastic Cases</text>
+    <text class="td" x="315" y="252" text-anchor="middle">25×16×7cm</text>
+    <text class="td" x="505" y="252" text-anchor="middle">52.5×35×42cm</text>
+    <text class="td" x="670" y="252" text-anchor="middle">0.077</text>
+    <text class="td" x="820" y="252" text-anchor="middle">7200</text>
+    <text class="td" x="960" y="252" text-anchor="middle">27.8</text>
+    <text class="td" x="1085" y="252" text-anchor="middle">17200</text>
+    <text class="td" x="1215" y="252" text-anchor="middle">66.4</text>
+  </g>
+</svg>
+
