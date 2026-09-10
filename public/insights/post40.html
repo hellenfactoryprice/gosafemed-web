@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid + Survival in One Compact Kit - GoSafeMed</title>
+    <meta name="description" content="A compact first aid and survival kit combining essential medical supplies with practical survival tools for hiking, camping and outdoor emergency preparedness.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .whatsapp-fab { position: fixed; bottom: 20px; right: 20px; z-index: 1000; transition: transform 0.3s ease-in-out; }
+        .whatsapp-fab:hover { transform: scale(1.1); }
+        .prose h2 { font-size: 1.5em; margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 600; }
+        .prose h3 { font-size: 1.15em; margin-top: 1.25em; margin-bottom: 0.5em; font-weight: 600; }
+        .prose p { margin-bottom: 1em; line-height: 1.7; }
+        .prose img { border-radius: 0.5rem; margin-top: 1.5em; margin-bottom: 1.5em; }
+        .prose ul { margin-top: 0.5em; margin-bottom: 1em; padding-left: 1.25em; }
+        .prose li { margin-bottom: 0.5em; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F26522',
+                        secondary: '#1A1A1B',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+
+    <header class="bg-secondary shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">GoSafeMed</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/#home" class="text-white hover:text-primary">Home</a>
+                <a href="/products/products" class="text-white hover:text-primary">Products</a>
+                <a href="/insights/insight" class="text-white hover:text-primary">Insights</a>
+                <a href="/#about" class="text-white hover:text-primary">About Us</a>
+                <a href="/#contact" class="text-white hover:text-primary">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-secondary">
+            <a href="/#home" class="block py-2 px-4 text-sm text-white hover:bg-primary">Home</a>
+            <a href="/products/products" class="block py-2 px-4 text-sm text-white hover:bg-primary">Products</a>
+            <a href="/insights/insight" class="block py-2 px-4 text-sm text-white hover:bg-primary">Insights</a>
+            <a href="/#about" class="block py-2 px-4 text-sm text-white hover:bg-primary">About Us</a>
+            <a href="/#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <article class="prose lg:prose-xl">
+            <h1 class="text-3xl md:text-4xl font-bold text-secondary">First Aid + Survival in One Compact Kit</h1>
+            <p class="text-gray-500 text-sm mt-2">SEP 10, 2026</p>
+
+            <img src="images/posts/post40/hero.jpg" alt="Compact first aid and survival kit combining medical supplies with survival tools for hiking and camping">
+
+            <p>Outdoor emergencies do not always begin with a serious injury.</p>
+            <p>A small cut on the trail may need a bandage. A sudden change in weather may call for an emergency blanket or rain poncho. A delayed return from a hike can make a flashlight, whistle or fire starter just as useful as traditional first aid supplies.</p>
+            <p>That is the idea behind this compact first aid and survival kit.</p>
+            <p>Instead of carrying a separate outdoor first aid kit and survival kit, the Adventure Mini brings both functions into one portable pack. Medical supplies are combined with practical outdoor essentials such as a flashlight, whistle, emergency blanket, rain poncho, fire starter and other survival tools.</p>
+            <p>The compact 600D Oxford pouch also features organized compartments, two-way zippers, a rip-away design and MOLLE attachment, making it suitable for hiking, camping, backpacking, road trips and outdoor emergency preparedness.</p>
+            <p>For outdoor retailers and distributors, this type of product also sits naturally between two familiar categories: first aid and survival gear.</p>
+
+            <h2>One compact pack. Two practical functions.</h2>
+            <p>Looking for a custom first aid and survival kit for your market? GoSafeMed supports small-batch, OEM and custom configurations for retailers and distributors.</p>
+        </article>
+
+        <div class="mt-12 border-t pt-6">
+            <a href="/insights/insight" class="text-primary hover:underline">&larr; Back to All Insights</a>
+        </div>
+    </main>
+
+    <footer class="bg-secondary text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2026 GoSafeMed. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/8618977149057" target="_blank" class="whatsapp-fab">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16">
+    </a>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
